@@ -1,0 +1,41 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+    },
+    "extends": "standard",
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "semi": ["error", "never"],
+      "max-len": ["error", { "code": 100 }],
+      "no-extra-semi": "error",
+      "arrow-parens": ["off"],
+      "compat/compat": "off",
+      "consistent-return": "error",
+      "comma-dangle": "off",
+      "generator-star-spacing": "off",
+      "no-console": "off",
+      "promise/param-names": "error",
+      "promise/no-native": "off",
+      "newline-per-chained-call": "off",
+      "react/sort-comp": ["error", {
+        "order": ["type-annotations", "static-methods", "lifecycle", "everything-else", "render"]
+      }],
+      "react/jsx-no-bind": "off",
+      "react/jsx-uses-vars": "error",
+      "react/jsx-uses-react": "error",
+      "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+      "react/prefer-stateless-function": "warn"
+    },
+    "plugins": [
+      "import",
+      "promise",
+      "compat",
+      "react"
+    ]
+  }
+  
